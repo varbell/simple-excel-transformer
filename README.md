@@ -1,6 +1,6 @@
 # A Transformer in Excel
 
-**Type `three plus four equals` in Excel and follow a tiny transformer as it predicts the next token, `seven`.** The workbook shows the intermediate matrices in color-coded cells so you can trace how the prediction changes when you edit the prompt.
+**Open Excel and follow a tiny transformer as it reads `one plus two equals` and predicts the next token, `three`.** The workbook shows the intermediate matrices in color-coded cells so you can trace how the prediction changes when you edit the prompt.
 
 [**Download the Excel workbook (.xlsx)**](https://github.com/varbell/simple-excel-transformer/raw/refs/heads/main/simple_transformer_emulator.xlsx) · [View the workbook on GitHub](simple_transformer_emulator.xlsx)
 
@@ -9,8 +9,8 @@
 ## Try it in a minute
 
 1. Download the workbook and open it in desktop Microsoft Excel. If Excel opens it in Protected View, enable editing to change the input.
-2. Replace the example prompt with `three plus four equals` and press Enter. Look for `seven` in the output.
-3. Change just one word, for example `three plus five equals`, and follow the changes from the input embeddings through attention to the next-token output.
+2. On the `base_model` sheet, find the four input cells **C18:C21**. The saved example is `one plus two equals`, with `three` in the **Answer** cell (**N18**).
+3. Change **C20** from `two` to `four` and press Enter. Watch the answer, probability (**N20**), and attention matrices update.
 
 Use spelled-out numbers from `one` to `nine` and start with sums below ten. The vocabulary has no token for zero and includes `ten`.
 
